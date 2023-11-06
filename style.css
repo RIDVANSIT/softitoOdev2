@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sonuc {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 10px auto;
+}
