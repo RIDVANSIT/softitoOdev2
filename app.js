@@ -12,19 +12,13 @@ araButtonu.onclick = function() {
     "portakal",
     "muz",
   ];
-
-  let sonuc = false;
+  let sonuc = [];
 
   for (let i = 0; i < liste.length; i++) {
     if (liste[i].includes(aranacakKelime)) {
-      sonuc = true;
-      break;
+      sonuc.push(liste[i]);
     }
   }
 
-  if (sonuc) {
-    sonucYazisi.innerHTML = `Aranan kelime bulundu: ${aranacakKelime}`;
-  } else {
-    sonucYazisi.innerHTML = `Aranan kelime bulunamadı.`;
-  }
+  sonucYazisi.innerHTML = sonuc.join(", ");
 };
