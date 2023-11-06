@@ -12,15 +12,15 @@ araButtonu.onclick = function() {
     "muz",
   ];
 
-  let sonuc = [];
+  let sonuc = new Set();
 
   for (let i = 0; i < aranacakKelimeler.length; i++) {
     for (let j = 0; j < liste.length; j++) {
       if (liste[j].includes(aranacakKelimeler[i])) {
-        sonuc.push(liste[j]);
+        sonuc.add(liste[j]);
       }
     }
   }
 
-  sonucYazisi.innerHTML = sonuc.join(", ");
+  sonucYazisi.innerHTML = Array.from(sonuc).join(", ");
 };
