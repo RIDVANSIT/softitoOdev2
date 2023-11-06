@@ -16,7 +16,7 @@ araButtonu.onclick = function() {
   let sonuc = false;
 
   for (let i = 0; i < liste.length; i++) {
-    if (aranacakKelime === liste[i]) {
+    if (liste[i].includes(aranacakKelime)) {
       sonuc = true;
       break;
     }
